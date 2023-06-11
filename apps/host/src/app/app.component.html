@@ -1,1 +1,12 @@
-<host-nx-welcome></host-nx-welcome> <router-outlet></router-outlet>
+<!-- <ul class="remote-menu">
+  <li><a routerLink="/">Home</a></li>
+  <li><a routerLink="remote">Remote</a></li>
+</ul>
+<router-outlet></router-outlet> -->
+<div class="container">
+  <div>I'm the host app</div>
+
+  <a [routerLink]="['/remote-app']">load the remote app</a>
+
+  <router-outlet></router-outlet> // the remote app comes here
+</div>
