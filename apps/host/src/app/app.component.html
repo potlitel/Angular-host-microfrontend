@@ -4,9 +4,9 @@
 </ul>
 <router-outlet></router-outlet> -->
 <div class="container">
-  <div>I'm the host app</div>
+  <!-- <div>I'm the host app</div> -->
+  <host-nx-welcome></host-nx-welcome>
+  <!-- <a [routerLink]="['/remote-app']">load the remote app</a> -->
 
-  <a [routerLink]="['/remote-app']">load the remote app</a>
-
-  <router-outlet></router-outlet> // the remote app comes here
+  <router-outlet></router-outlet>
 </div>

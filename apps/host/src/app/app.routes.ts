@@ -9,6 +9,9 @@ export const appRoutes: Route[] = [
   },
   {
     path: '',
-    component: NxWelcomeComponent,
+    redirectTo: 'NxWelcomeComponent',
+    pathMatch: 'full',
+    // component: NxWelcomeComponent,
+    // pathMatch: 'full',
   },
 ];
